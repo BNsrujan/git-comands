@@ -73,7 +73,8 @@ Taking and edit and pushing a file to github = github repo => clone => changes =
 
 - Merge conflicts occur when Git cannot automatically resolve code differences between two commits.
 
-[Merge Conflict Example Image Placeholder]
+![image](https://github.com/user-attachments/assets/6e8b7017-9db5-46cc-9ac3-dfc2c740e17d)
+
 
 1. Merge branches: `git merge "branch name"` = add the branch name which we want to merge with and resolve the error
 
@@ -91,8 +92,9 @@ Taking and edit and pushing a file to github = github repo => clone => changes =
 1. Switch to the branch to rebase: `git checkout "branch name"`
 2. Rebase: `git rebase "main"`
 
----
+![image](https://github.com/user-attachments/assets/7ae0ecbb-9f4a-4a9c-ac14-baa0a90f9941)
 
+---
 ## Undoing Changes
 
 ### Case 1: Staged but not committed
@@ -125,13 +127,13 @@ Taking and edit and pushing a file to github = github repo => clone => changes =
 - Fetch updates: `git fetch upstream`
 - Rebase: `git rebase upstream/master`
 
+![image](https://github.com/user-attachments/assets/5b21228c-0636-4b27-aeeb-944cf76ad155)
+
 ---
 
 ## Deleting a Branch in a Remote Repository
 
 - Delete a remote branch: `git push origin --delete <branch-name>`
-
-[Delete Remote Branch Image Placeholder]
 
 ---
 
@@ -142,3 +144,7 @@ And imported the branch as `feature/login`
 
 ```bash
 git branch --track feature/login origin/feature/login
+
+
+![image](https://github.com/user-attachments/assets/cb871300-3a87-42e4-a57b-cff1a6429ef7)
+
