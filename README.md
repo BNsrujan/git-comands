@@ -145,7 +145,7 @@ And imported the branch as `feature/login`
 ```bash
 git branch --track feature/login origin/feature/login
 
-
+```
 ![image](https://github.com/user-attachments/assets/cb871300-3a87-42e4-a57b-cff1a6429ef7)
 
 ## Git tags
@@ -173,7 +173,8 @@ A fork is a copy of a repository that allows you to freely experiment with chang
    - This creates your own copy of the repository
 
 2. **Keep your fork updated:**
-   ```bash
+   
+```bash
    # Add the original repository as upstream
    git remote add upstream <original-repo-url>
    
@@ -182,7 +183,7 @@ A fork is a copy of a repository that allows you to freely experiment with chang
    
    # Merge upstream changes into your local branch
    git merge upstream/main
-   ```
+```
 
 3. **Submit changes:**
    - Make changes in your fork
