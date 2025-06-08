@@ -34,7 +34,7 @@ Taking and edit and pushing a file to github = github repo => clone => changes =
 3. Verify connection: `git remote -v`
 4. Push changes: `git push origin "branch name"`
 5. Shortcut for pushing to `main`: `git push -u origin main`
-6. `git push -u origin main` = `-u` “upstream (shortcut) for origin main”
+6. `git push -u origin main` = `-u` "upstream (shortcut) for origin main"
 
 ---
 
@@ -148,3 +148,116 @@ git branch --track feature/login origin/feature/login
 
 ![image](https://github.com/user-attachments/assets/cb871300-3a87-42e4-a57b-cff1a6429ef7)
 
+## Git tags
+git tag v1.0
+git push origin v1.0
+
+## Git Tags
+
+Git tags are used to mark specific points in your repository's history as being important, typically for version releases.
+
+- **Create a tag:** `git tag v1.0`
+- **Push a tag to remote:** `git push origin v1.0`
+- **List all tags:** `git tag`
+- **Delete a tag:** `git tag -d v1.0`
+- **Delete remote tag:** `git push origin --delete v1.0`
+
+---
+
+## Forking Repositories
+
+A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project.
+
+1. **Create a fork:**
+   - Click the "Fork" button on the GitHub repository page
+   - This creates your own copy of the repository
+
+2. **Keep your fork updated:**
+   ```bash
+   # Add the original repository as upstream
+   git remote add upstream <original-repo-url>
+   
+   # Fetch changes from upstream
+   git fetch upstream
+   
+   # Merge upstream changes into your local branch
+   git merge upstream/main
+   ```
+
+3. **Submit changes:**
+   - Make changes in your fork
+   - Create a pull request to the original repository
+
+---
+
+## Git Configuration
+
+Essential Git configuration commands for setting up your environment:
+
+- **Set your name:** `git config --global user.name "Your Name"`
+- **Set your email:** `git config --global user.email "your.email@example.com"`
+- **View your configuration:** `git config --list`
+- **Set default editor:** `git config --global core.editor "vim"`
+
+---
+
+## Git Stash
+
+Git stash temporarily saves your uncommitted changes:
+
+- **Save changes:** `git stash save "message"`
+- **List stashes:** `git stash list`
+- **Apply latest stash:** `git stash apply`
+- **Apply specific stash:** `git stash apply stash@{n}`
+- **Drop a stash:** `git stash drop stash@{n}`
+- **Clear all stashes:** `git stash clear`
+
+---
+
+## Git Ignore
+
+The `.gitignore` file tells Git which files to ignore:
+
+1. **Create .gitignore:**
+   ```bash
+   touch .gitignore
+   ```
+
+2. **Common patterns to ignore:**
+   ```
+   # Dependencies
+   node_modules/
+   vendor/
+
+   # Environment files
+   .env
+   .env.local
+
+   # Build outputs
+   dist/
+   build/
+
+   # IDE files
+   .idea/
+   .vscode/
+   *.swp
+
+   # OS files
+   .DS_Store
+   Thumbs.db
+   ```
+
+---
+
+## Image References
+
+The following images illustrate key Git concepts:
+
+1. Merge Conflicts:
+![Merge Conflicts](photo/Screenshot%202024-02-16%20200141.png)
+
+2. Rebasing:
+![Rebasing](photo/Screenshot%202024-02-16%20202142.png)
+
+3. Remote Repository:
+![Remote Repository](photo/Screenshot%202024-02-16%20200141.png)
