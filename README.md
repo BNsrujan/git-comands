@@ -249,15 +249,4 @@ The `.gitignore` file tells Git which files to ignore:
 
 ---
 
-## Image References
 
-The following images illustrate key Git concepts:
-
-1. Merge Conflicts:
-![Merge Conflicts](photo/Screenshot%202024-02-16%20200141.png)
-
-2. Rebasing:
-![Rebasing](photo/Screenshot%202024-02-16%20202142.png)
-
-3. Remote Repository:
-![Remote Repository](photo/Screenshot%202024-02-16%20200141.png)
